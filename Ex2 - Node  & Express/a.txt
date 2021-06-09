@@ -1,0 +1,5 @@
+Writing To Files
+Now that you’ve got the reading of files down, it’s time to start modifying these files. To do this we’ll be using the same FS package we used in part one.
+
+The Code:
+Again create a new file within your current directory and call it write.js and then add the following javascript code:
