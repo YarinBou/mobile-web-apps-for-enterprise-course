@@ -1,10 +1,10 @@
 const express = require('express');
-const myExpress = require('myExpress.js');
-const calc = require('calc.js');
 const app = express();
-const port = 3000;
+const cors = require('cors');
+app.use(cors(), require('./myExpress'));
+app.use(cors(), require('./calc'));
 
-
-app.listen(port, () => {
-    console.log(`listening at http://localhost:${port}`)
+app.listen(3000, () => {
+    console.log(" The Server is here http://localhost:3000\n")
+    console.log(" Calc: http://localhost:3000/calc.html\n" + " ReadME: http://localhost:3000/readme.html\n" + " Test: http://localhost:3000/test.html");
 })
